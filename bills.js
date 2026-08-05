@@ -1588,43 +1588,40 @@ const bills=[
 ];
 
 const imageProfiles = [
-  {match:/Katahdin/i,url:"https://earthjustice.org/wp-content/uploads/mainemonument_1.jpg",alt:"Katahdin Woods and Waters National Monument in northern Maine",credit:"Katahdin Woods and Waters photograph"},
-  {match:/Cerro de la Olla/i,url:"https://www.wilderness.org/sites/default/files/styles/1000x755/public/media/image/Latirs_from_CdlO_0.jpg?h=94b28deb&itok=9DVYWXeI",alt:"Cerro de la Olla in Río Grande del Norte National Monument, New Mexico",credit:"Stuart Wilde / The Wilderness Society"},
-  {match:/Owyhee|Malheur Community/i,url:"https://www.nwf.org/-/media/NEW-WEBSITE/Programs/Outdoors/Blog/0718240-Owyhee-Canyonlands-Brian-Grossenbacher.jpg",alt:"The Owyhee Canyonlands of southeast Oregon",credit:"Brian Grossenbacher / National Wildlife Federation"},
-  {match:/Gila Wild|Gila River/i,url:"https://wildgilariver.org/wp-content/uploads/2020/09/IMG_20140528_163800-1-scaled.jpg",alt:"The Gila River flowing through southwestern New Mexico",credit:"Wild Gila River"},
-  {match:/Dolores River/i,url:"https://smartwatermagazine.com/sites/default/files/styles/thumbnail-830x455/public/the-dolores-river-co.jpg?itok=Qk90nBgl",alt:"The Dolores River winding through western Colorado canyon country",credit:"Olivia Miller / U.S. Geological Survey"},
-  {match:/Boundary Waters/i,url:"https://media.audubon.org/c532hm_0.jpg?auto=webp&disable=upscale&fit=bounds&quality=90&width=1400",alt:"Boundary Waters Canoe Area Wilderness in Minnesota",credit:"Clint Farlinger / Audubon"},
-  {match:/Ruby Mountains/i,url:"https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=84",alt:"High alpine peaks and valleys representative of Nevada’s Ruby Mountains",credit:"Unsplash landscape photograph"},
-  {match:/Truckee Meadows|Carson City/i,url:"https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=84",alt:"Sagebrush and mountain public lands of western Nevada",credit:"Unsplash landscape photograph"},
-  {match:/Southern Nevada|LASSO Act/i,url:"https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1600&q=84",alt:"Desert public lands of the American Southwest",credit:"Unsplash landscape photograph"},
-  {match:/Arctic Refuge|NPR-A|Central Yukon/i,url:"https://images.unsplash.com/photo-1517299321609-52687d1bc55a?auto=format&fit=crop&w=1600&q=84",alt:"Arctic tundra and mountains in Alaska",credit:"Unsplash landscape photograph"},
-  {match:/Buffalo Field Office|Miles City|Montana Sportsmen/i,url:"https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1600&q=84",alt:"Open grassland and rolling public lands of Montana and Wyoming",credit:"Unsplash landscape photograph"},
-  {match:/North Dakota/i,url:"https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1600&q=84",alt:"Open northern plains landscape",credit:"Unsplash landscape photograph"},
-  {match:/Upper Price River|Brian Head|Fruit Heights|Historic Roadways/i,url:"https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=84",alt:"Mountain and canyon public lands of Utah",credit:"Unsplash landscape photograph"},
-  {match:/Colorado Outdoor|Gunnison|Continental Divide|Sarvis Creek/i,url:"https://images.unsplash.com/photo-1426604966848-d7adac402bff?auto=format&fit=crop&w=1600&q=84",alt:"Colorado mountain public lands along the Continental Divide",credit:"Unsplash landscape photograph"},
-  {match:/Smith River|Oregon Recreation|Wild Olympics|Roadless Area/i,url:"https://images.unsplash.com/photo-1476231682828-37e571bc172f?auto=format&fit=crop&w=1600&q=84",alt:"Old-growth forest and river habitat of the Pacific Northwest",credit:"Unsplash landscape photograph"},
-  {match:/Pecos Watershed|Buffalo Tract/i,url:"https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=84",alt:"High-desert watershed and public lands of New Mexico",credit:"Unsplash landscape photograph"},
-  {match:/San Joaquin River/i,url:"https://images.unsplash.com/photo-1437482078695-73f5ca6c96e2?auto=format&fit=crop&w=1600&q=84",alt:"A river corridor through a working agricultural landscape",credit:"Unsplash landscape photograph"},
-  {match:/Great Lakes/i,url:"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=84",alt:"Expansive freshwater shoreline and fish habitat",credit:"Unsplash water photograph"},
-  {match:/Greater Yellowstone/i,url:"https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1600&q=84",alt:"Mountain habitat in the Greater Yellowstone ecosystem",credit:"Unsplash landscape photograph"},
-  {match:/Benjamin Harrison/i,url:"https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1600&q=84",alt:"Mature hardwood forest in Indiana",credit:"Unsplash forest photograph"},
-  {match:/Wildfire/i,url:"https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?auto=format&fit=crop&w=1600&q=84",alt:"Wildfire and forest-management conditions",credit:"Unsplash wildfire photograph"},
-  {match:/Snow Water/i,url:"https://images.unsplash.com/photo-1486911278844-a81c5267e227?auto=format&fit=crop&w=1600&q=84",alt:"Mountain snowpack that supplies western rivers",credit:"Unsplash snowpack photograph"},
-  {match:/Aquatic Invasive|Save Our Seas|Bycatch|Sport Fish/i,url:"https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1600&q=84",alt:"Fish and aquatic habitat",credit:"Unsplash underwater photograph"},
-  {match:/Wildlife Road Crossings/i,url:"https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=1600&q=84",alt:"Wildlife habitat and movement corridor",credit:"Unsplash wildlife photograph"},
-  {match:/Public Lands Corps|Outdoor Americans with Disabilities|Public Lands Access/i,url:"https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=1600&q=84",alt:"People accessing and caring for public lands",credit:"Unsplash outdoor photograph"},
-  {match:/FLOWS Act/i,url:"https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1600&q=84",alt:"Flowing river and hydropower landscape",credit:"Unsplash river photograph"},
-  {match:/American Shores/i,url:"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=84",alt:"Undeveloped American coastline",credit:"Unsplash coastal photograph"}
+  {match:/Katahdin/i,url:"images/photo-contest/2473242195.webp",alt:"A sunrise rainbow over public water in Maine",credit:"(C) Christi Elliott"},
+  {match:/Boundary Waters|Great Lakes/i,url:"images/photo-contest/2460870903.webp",alt:"A common loon on public water in Michigan",credit:"(C) Nathan McCarty"},
+  {match:/Cerro de la Olla|Gila Wild|Gila River|Pecos Watershed|Buffalo Tract|Border Lands/i,url:"images/photo-contest/2523002231.webp",alt:"Elk crossing high-desert habitat in New Mexico",credit:"(C) Tom Adrien"},
+  {match:/Owyhee|Malheur Community|Oregon Recreation/i,url:"images/photo-contest/2524443199.webp",alt:"An angler on Oregon public water at first light",credit:"(C) Michael Stoeger"},
+  {match:/Dolores River|Colorado Outdoor|Gunnison|Continental Divide|Sarvis Creek|Snow Water/i,url:"images/photo-contest/2473448547.webp",alt:"An archery hunter moving through Colorado’s autumn public lands",credit:"(C) Luke Koppa"},
+  {match:/Ruby Mountains|Truckee Meadows|Carson City/i,url:"images/photo-contest/2486200216.webp",alt:"A goshawk and jackrabbit in Nevada’s high-desert habitat",credit:"(C) Lexie McPherson"},
+  {match:/Southern Nevada|LASSO Act/i,url:"images/photo-contest/2519836064.webp",alt:"Elk habitat in the arid Southwest",credit:"(C) Michael Osborne"},
+  {match:/Arctic Refuge|NPR-A|Central Yukon|FLOWS Act/i,url:"images/photo-contest/2497665650.webp",alt:"A hunter crossing a remote Alaska river in caribou country",credit:"(C) Tyler Bryan"},
+  {match:/Buffalo Field Office|Miles City|Montana Sportsmen|America the Beautiful/i,url:"images/photo-contest/2551470940.webp",alt:"Sage grouse displaying in intact central Montana sagebrush habitat",credit:"(C) Seth Owens"},
+  {match:/North Dakota/i,url:"images/photo-contest/2551471640.webp",alt:"A bighorn sheep on North Dakota public land",credit:"(C) Seth Owens"},
+  {match:/Upper Price River|Brian Head|Fruit Heights|Historic Roadways/i,url:"images/photo-contest/2454194909.webp",alt:"Bighorn sheep in snowy Utah mountain habitat",credit:"(C) Jacob Bleggi"},
+  {match:/Smith River|Wild Olympics|Roadless Area|Wildfire/i,url:"images/photo-contest/2486230623.webp",alt:"A hunter in a foggy Idaho public forest",credit:"(C) Ty McCloud"},
+  {match:/San Joaquin River/i,url:"images/photo-contest/2460421056.webp",alt:"Sunrise over a public lake in Lassen Volcanic National Park, California",credit:"(C) Kyle"},
+  {match:/Greater Yellowstone/i,url:"images/photo-contest/2510117938.webp",alt:"An angler on a mountain lake in Wyoming’s Bighorn National Forest",credit:"(C) Stephanie Magnuson"},
+  {match:/Benjamin Harrison/i,url:"images/photo-contest/2580293572.webp",alt:"A public-water fishing camp on Indiana’s Tippecanoe River",credit:"(C) Loren Allen Smith"},
+  {match:/Aquatic Invasive|Save Our Seas|Bycatch|Sport Fish/i,url:"images/photo-contest/2462223931.webp",alt:"A native trout being released into public water",credit:"(C) Jordan Lefler"},
+  {match:/Wildlife Road Crossings/i,url:"images/photo-contest/2587123369.webp",alt:"A bull elk in Colorado mountain habitat",credit:"(C) Tristan Owen"},
+  {match:/Public Lands Corps|Outdoor Americans with Disabilities|Public Lands Access|Public Lands Integrity/i,url:"images/photo-contest/2450976402.webp",alt:"Veterans and service members standing together for public lands in Washington",credit:"(C) Jacob Greenslade"},
+  {match:/American Shores/i,url:"images/photo-contest/2473242195.webp",alt:"A sunrise rainbow over public water in Maine",credit:"(C) Christi Elliott"},
+  {match:/Public Lands in Public Hands/i,url:"images/photo-contest/2462279936.webp",alt:"An angler at sunset on Montana public land and water",credit:"(C) Jordan Lefler"}
 ];
 
-for (const bill of bills) {
+function applyImageProfile(bill) {
   const profile = imageProfiles.find(({match}) => match.test(`${bill.title} ${bill.summary}`));
   if (profile) {
     bill.image = profile.url;
     bill.imageAlt = profile.alt;
     bill.imageCredit = profile.credit;
   } else {
-    bill.imageAlt = `${bill.topic} landscape or subject connected to ${bill.title}`;
-    bill.imageCredit = "Unsplash documentary photograph";
+    bill.image = "images/photo-contest/2462279936.webp";
+    bill.imageAlt = `An angler at sunset on public land and water, representing ${bill.title}`;
+    bill.imageCredit = "(C) Jordan Lefler";
   }
+  return bill;
 }
+
+for (const bill of bills) applyImageProfile(bill);
