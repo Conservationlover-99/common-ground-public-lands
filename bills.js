@@ -1614,7 +1614,102 @@ const imageProfiles = [
   {match:/Public Lands in Public Hands/i,url:"images/photo-contest/2462279936.webp",alt:"An angler at sunset on Montana public land and water",credit:"(C) Jordan Lefler"}
 ];
 
+const billPhotoIds = {
+  "119th-h-r-8876":"2462223931",
+  "119th-s-1791":"2473448547",
+  "119th-s-1547":"2551470940",
+  "119th-h-r-3857":"1654904238",
+  "119th-s-140":"2586515438",
+  "119th-s-2437":"2510117938",
+  "119th-s-3518":"2497665650",
+  "119th-h-r-9167":"1625116170",
+  "119th-h-r-7695":"2486230623",
+  "119th-h-r-2252":"2551471640",
+  "119th-h-j-res-140":"1624920965",
+  "119th-h-r-7979":"2450976402",
+  "119th-s-3004":"2454194909",
+  "119th-s-3493":"2486200216",
+  "119th-s-3527":"1787391913",
+  "119th-s-1349":"1790333376",
+  "119th-s-1464":"1628190157",
+  "119th-s-1497":"2523002231",
+  "119th-s-2968":"2447424739",
+  "119th-s-3082":"1681538874",
+  "119th-s-3526":"1708494836",
+  "119th-s-462":"1791918952",
+  "119th-h-r-34":"2519836064",
+  "119th-h-r-5478":"1624992034",
+  "119th-s-282":"2473242195",
+  "119th-s-90":"1647905399",
+  "119th-s-216":"1627302861",
+  "119th-s-2878":"2460870903",
+  "119th-s-3579":"2510870497",
+  "119th-s-1470":"1683037344",
+  "119th-s-1787":"1683054875",
+  "119th-s-1860":"1761468636",
+  "119th-h-j-res-104":"1787915254",
+  "119th-h-j-res-105":"1683153266",
+  "119th-h-j-res-106":"1681540300",
+  "119th-h-j-res-130":"1683034521",
+  "119th-h-j-res-131":"1681618448",
+  "119th-s-j-res-80":"1681535916",
+  "119th-s-j-res-91":"1665577999",
+  "119th-s-1005":"1758626218",
+  "119th-s-1228":"1655745602",
+  "119th-s-1319":"1628139810",
+  "119th-s-1341":"1653054868",
+  "119th-s-1476":"1803891409",
+  "119th-s-1737":"1707653850",
+  "119th-s-2042":"1656658023",
+  "119th-s-764":"1681211689",
+  "119th-s-888":"1787920620",
+  "119th-s-945":"2524443199",
+  "119th-s-j-res-89":"1693385775",
+  "119th-h-r-6078":"2587123369",
+  "119th-s-2967":"1626503630",
+  "119th-h-j-res-124":"1665522994",
+  "119th-h-r-5102":"1793297806",
+  "119th-h-r-5041":"2538165381",
+  "119th-h-r-3858":"2522116626",
+  "119th-s-1942":"1818023635",
+  "119th-s-1413":"2460421056",
+  "119th-s-1084":"1744518600",
+  "119th-h-r-718":"2462279936",
+  "118th-s-2990":"1684279335"
+};
+
+const photoCredits = {
+  "1624920965":"(C) Josh Jameson","1624992034":"(C) Nick Dax","1625116170":"(C) Scott Cameron",
+  "1626503630":"(C) Greg Chatham","1627302861":"(C) Michael D Hayworth","1628139810":"(C) Mike Prime",
+  "1628190157":"(C) Kyle Klain","1647905399":"(C) Bayli Christirf","1653054868":"(C) Vincent Rozzi",
+  "1654904238":"(C) Jamie Wilkinson","1655745602":"(C) Joshua Billings","1656658023":"(C) Alex Gudenkauf",
+  "1665522994":"(C) Thomas Adrien","1665577999":"(C) Thomas Adrien","1681211689":"(C) Grant Harter",
+  "1681535916":"(C) Kelly Reynolds","1681538874":"(C) Kelly Reynolds","1681540300":"(C) Kelly Reynolds",
+  "1681618448":"(C) Kelly Reynolds","1683153266":"(C) Troy Miller","1683034521":"(C) Zachary Shopene",
+  "1683037344":"(C) Zachary Shopene","1683054875":"(C) Matthew Meyer","1684279335":"(C) Stone Miller",
+  "1693385775":"(C) Chuck Kartak","1707653850":"(C) Bradley Joyce","1708494836":"(C) Sam Jezak",
+  "1744518600":"(C) Joseph Hammell","1758626218":"(C) Lindsi Lake","1761468636":"(C) Trent Lodge",
+  "1787391913":"(C) Michael Tatum","1787915254":"(C) Chase Coyle","1787920620":"(C) Chase Coyle",
+  "1790333376":"(C) Matthew Strauch","1791918952":"(C) McKenzie Norton","1793297806":"(C) Kenneth G. Kinder",
+  "1803891409":"(C) Edward R. Misquez III","1818023635":"(C) Gordon Lyons",
+  "2447424739":"(C) Brandon Ferra","2450976402":"(C) Jacob Greenslade","2454194909":"(C) Jacob Bleggi",
+  "2460421056":"(C) Kyle","2460870903":"(C) Nathan McCarty","2462223931":"(C) Jordan Lefler",
+  "2462279936":"(C) Jordan Lefler","2473242195":"(C) Christi Elliott","2473448547":"(C) Luke Koppa",
+  "2486200216":"(C) Lexie McPherson","2486230623":"(C) Ty McCloud","2497665650":"(C) Tyler Bryan",
+  "2510117938":"(C) Stephanie Magnuson","2510870497":"(C) Ben Harker","2519836064":"(C) Michael Osborne",
+  "2522116626":"(C) Chris Lennon","2523002231":"(C) Tom Adrien","2524443199":"(C) Michael Stoeger",
+  "2538165381":"(C) Russell Reynolds","2551470940":"(C) Seth Owens","2551471640":"(C) Seth Owens",
+  "2586515438":"(C) Kyle Allia","2587123369":"(C) Tristan Owen"
+};
+
 function applyImageProfile(bill) {
+  const assignedPhotoId = billPhotoIds[bill.id];
+  if (assignedPhotoId) {
+    bill.image = `images/photo-contest/${assignedPhotoId}.webp`;
+    bill.imageAlt = `A BHA photo-contest image selected for the landscape, water, wildlife, or outdoor-access context of ${bill.title}`;
+    bill.imageCredit = photoCredits[assignedPhotoId];
+    return bill;
+  }
   const profile = imageProfiles.find(({match}) => match.test(`${bill.title} ${bill.summary}`));
   if (profile) {
     bill.image = profile.url;
